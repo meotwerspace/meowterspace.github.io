@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Cat Dunicliff</title>
+    <!-- Get jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script type="text/javascript">
+<!--
+if (screen.width <= 699) {
+document.location = "mobile.html";
+}
+//-->
+</script>
+    <script>
+    $(function(){
+
+        
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
+    
+    <link href="main.css" rel="stylesheet"/>
+    <style>
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><div width="100%"><img src="images/tree-trunk-569275_1920.jpg" width="100%">
+            <div class="text-editor-wrap" style="height:90%; width:90%">
+                <div class="title-bar">contact.js - bash - SIZE</div>
+                <div class="text-body">
+                    <div id="typed-strings">
+                        
+                    </div>
+                    <span id="typed" style="white-space:pre;"></span>
+                </div>
+                <script src="js/keypress.js"></script>
+        </div>
+        </div>
+    </div>
+
+</body>
+<script>
+
+    function expand() {
+        ('text-body').animate({
+            height: '90%',
+            width: '90%'
+        })
+    }
+    
+$( document ).ready(function() {
+     $(function(){
+      $("#typed").typed({
+        strings: ["<p style='color:#00FF00'>Contact</p>"],
+        typeSpeed: 0,
+            // time before typing starts
+            startDelay: 3,
+            // backspacing speed
+            backSpeed: 1,
+            // shuffle the strings
+               shuffle: false,
+            // time before backspacing
+            backDelay: 500,
+            // loop
+            loop: false,
+            // false = infinite
+            loopCount: false,
+            // show cursor
+            showCursor: true,
+            // call when done callback function
+            callback: function() {}
+      });
+  });
+
+    
+});
+
+</script>
+</html>

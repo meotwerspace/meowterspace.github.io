@@ -49,7 +49,7 @@ are met:
 2. Redistributions in binary form must reproduce the above copyright
    notice, this list of conditions and the following disclaimer in the
    documentation and/or other materials provided with the distribution.
-3. The name of the author may not be used to endorse or promote products
+3. The name of the author may not be used fshto endorse or promote products
    derived from this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
@@ -64,7 +64,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-var modifiers = ['ctrl', 'alt', 'shift'],
+var modifiers = [],
     KEY_MAP = {},
     shifted_symbols = {
         58: 59,     // : -> ;
@@ -189,18 +189,6 @@ var current_keys = {
     ctrl: false,
     alt: false,
     shift: false
-};
-
-function update_current_modifiers(key) {
-    current_keys.ctrl = key.ctrl;
-    current_keys.alt = key.alt;
-    current_keys.shift = key.shift;
-};
-
-function same_modifiers(key1, key2) {
-    return key1.ctrl === key2.ctrl
-        && key1.alt === key2.alt
-        && key1.shift === key2.shift;
 };
 
 if(typeof window.KeyCode != "undefined") {

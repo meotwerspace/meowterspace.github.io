@@ -12,11 +12,26 @@ if (screen.width <= 699) {
 document.location = "mobile.html";
 }
 //-->
-</script>
-    <script>
+    </script>
+        <script>
     $(function(){
 
-        
+        $("#typed").typed({
+            stringsElement: $('#typed-strings'),
+            typeSpeed: -110,
+            startDelay: 10,
+            backDelay: 0,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
 
     });
 
@@ -71,7 +86,18 @@ document.location = "mobile.html";
                 <div class="title-bar">about_cat.js - bash - SIZE</div>
                 <div class="text-body">
                     <div id="typed-strings">
-                        
+                        <p style='color:#00FF00; size:10;'>About
+                            <br>S.P.D.S.V.B.E.E.V
+                            <br><span style='color:#FFFFFF'>My name is <strong>Cat Dunicliff</strong>, a freelance Developer, designer, maker and geek all rolled into one
+package. Neat right? I’ve been always interested in code since I was a tiny human. Luckily between
+then and the present my skills have vastly improved. Dispite spending most of my day infront of
+a computer, I have a real passion for both building and breaking interfaces between the digital
+and physical world.<br>I have a love of 3D printers, CNC technology and anything I can both program and solder.</span>
+                            <br>Experience:
+                            <br>Python   * * * * *    Javascript   * * * * *
+                            <br>HTML     * * * * *    C            * *
+                            <br>CSS      * * * * *
+                            <br><span style="color:#808080">Press ESC to go back</span></p>
                     </div>
                     <span id="typed" style="white-space:pre;"></span>
                 </div>
@@ -83,39 +109,9 @@ document.location = "mobile.html";
 </body>
 <script>
 
-    function expand() {
-        ('text-body').animate({
-            height: '90%',
-            width: '90%'
-        })
-    }
     
 $( document ).ready(function() {
-     $(function(){
-      $("#typed").typed({
-        strings: ["<p style='color:#00FF00'>About<br><br>I BUILDED DIZ ALL BY MY SELVEZ. CLAPPPPPP</p>"],
-        typeSpeed: 0,
-            // time before typing starts
-            startDelay: 3,
-            // backspacing speed
-            backSpeed: 1,
-            // shuffle the strings
-               shuffle: false,
-            // time before backspacing
-            backDelay: 500,
-            // loop
-            loop: false,
-            // false = infinite
-            loopCount: false,
-            // show cursor
-            showCursor: true,
-            // call when done callback function
-            callback: function() {}
-      });
-  });
-
-    
-});
+}
 
 </script>
 </html>

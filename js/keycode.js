@@ -251,7 +251,6 @@ var KeyCode = window.KeyCode = {
         var code = e.which || e.keyCode;
         return {
             code: KeyCode.translate_key_code(code),
-            shift: e.shiftKey,
             alt: e.altKey,
             ctrl: e.ctrlKey
         };
@@ -284,7 +283,6 @@ var KeyCode = window.KeyCode = {
         var code = key.code;
         if(code == KeyCode.CTRL) return current_keys.ctrl;
         if(code == KeyCode.ALT) return current_keys.alt;
-        if(code == KeyCode.SHIFT) return current_keys.shift;
 
         return current_keys.codes[code] !== undefined
             && same_modifiers(key, current_keys);
@@ -314,3 +312,4 @@ for(var code in key_names) {
     KeyCode[key_names[code]] = code;
 }
 })();
+

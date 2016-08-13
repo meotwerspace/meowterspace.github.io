@@ -28,7 +28,7 @@ var terminal = document.getElementById('text-editor-wrap');
     function pageLoader(p) {
         if (p == "HOME") {
             window.location.href = 'index.html';
-        } else if (p == "ABOUT" || p == "SHIFTABOUT") {
+        } else if (p == "ABOUT" || p == "ABOUT") {
             window.location.href = 'about.html';
         } else if (p == "PROJECTS") {
             window.location.href = 'projects.html';

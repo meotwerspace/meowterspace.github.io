@@ -34,6 +34,8 @@ var terminal = document.getElementById('text-editor-wrap');
             window.location.href = 'projects.html';
         } else if (p == "CONTACT") {
             window.location.href = 'contact.html';
+        } else if (p == "BLOG") {
+            window.location.href = 'http://blog.meowter.space';
         } else if (p == "CV") {
             window.location.href = 'cv.html';
         } else if (p == "HELLO") {

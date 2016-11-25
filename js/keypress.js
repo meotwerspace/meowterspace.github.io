@@ -40,6 +40,8 @@ var terminal = document.getElementById('text-editor-wrap');
             window.location.href = 'cv.html';
         } else if (p == "HELLO") {
             document.getElementById("typed").innerHTML='<span style="color:#FFFFFF">Hi There! :)</span>';
+        } else if (p == "RYAN") {
+            document.getElementById("typed").innerHTML='<span style="color:#FFFFFF">RYAN smells</span>';
         } else {
             typed = ''
         }

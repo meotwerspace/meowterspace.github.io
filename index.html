@@ -172,7 +172,7 @@ $( document ).ready(function() {
             typed = typed.substring(0, typed.length - 1);
             document.getElementById("del").innerHTML='';
             document.getElementById("typed").innerHTML = 
-                typed.toLowerCase();
+                typed.toUpperCase();
         } else if (k.hot_key(k.translate_event(e)) == "Enter") {
             document.getElementById("del").innerHTML='';
             pageLoader(typed);
@@ -181,7 +181,7 @@ $( document ).ready(function() {
                 typed = typed + k.hot_key(k.translate_event(e));
                 document.getElementById("del").innerHTML='';
                 document.getElementById("typed").innerHTML = 
-                    typed.toLowerCase();
+                    typed.toUpperCase();
             }
         }
     }

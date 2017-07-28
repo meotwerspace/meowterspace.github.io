@@ -1,0 +1,224 @@
+html {
+position: relative;
+min-height: 100%;
+}
+body {
+  padding: 0;
+  min-width: 320px;
+}
+.error{
+  color:#C73834;
+}
+.info{
+  color:#5bc0de;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  background-color: #2f385b;
+  border-color: #1f2747;
+  color: #FFFFFF;
+  height: 40px;
+  /*padding: 3px 5px;*/
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  text-align: center;
+}
+.header-placeholder {
+    height: 40px;
+}
+.topMenu{
+  padding: 3px 10px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #c0c0c0;
+}
+.dropdown-menu > li {
+  display: block;
+  padding: 3px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu > li:hover {
+  background-color: #f8f8f8;
+}
+.dropdown-menu > li.selected {
+  background-color: #efefef;
+}
+/* Custom page footer */
+.footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  padding-top: 5px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  background-color: #f8f8f8;
+  /*margin-top: 20px;*/
+  text-align: center;
+}
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+.lgbk-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.eLogbookMenu{
+  max-height: 90vh;
+  overflow: auto;
+}
+.content{
+  padding: 5px 5px 60px 5px;
+  max-width: 98%;
+  margin: 0 auto;
+  clear: both;
+}
+.popover{
+  color: #7c7c7c;
+}
+/*Styles for Panel Logbook #0*/
+.panel-lgbk-0 {
+  border-color: #2F385B;
+}
+.panel-lgbk-0  > .panel-heading {
+  color: #fff;
+  background-color: #2F385B;
+  border-color: #2F385B;
+}
+.panel-lgbk-0  > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #2F385B;
+}
+.panel-lgbk-0  > .panel-heading .badge {
+  color: #2F385B;
+  background-color: #fff;
+}
+.panel-lgbk-0  > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #2F385B;
+}
+
+/*Styles for Panel Logbook #1*/
+.panel-lgbk-1 {
+  border-color: #1D6F94;
+}
+.panel-lgbk-1 > .panel-heading {
+  color: #fff;
+  background-color: #1D6F94;
+  border-color: #1D6F94;
+}
+.panel-lgbk-1 > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #1D6F94;
+}
+.panel-lgbk-1 > .panel-heading .badge {
+  color: #1D6F94;
+  background-color: #fff;
+}
+.panel-lgbk-1 > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #1D6F94;
+}
+
+/*Styles for Panel Logbook #2*/
+.panel-lgbk-2 {
+  border-color: #2283AD;
+}
+.panel-lgbk-2 > .panel-heading {
+  color: #fff;
+  background-color: #2283AD;
+  border-color: #2283AD;
+}
+.panel-lgbk-2 > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #2283AD;
+}
+.panel-lgbk-2 > .panel-heading .badge {
+  color: #2283AD;
+  background-color: #fff;
+}
+.panel-lgbk-2 > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #2283AD;
+}
+
+/*Styles for Panel Logbook #3*/
+.panel-lgbk-3 {
+  border-color: #50AFDA;
+}
+.panel-lgbk-3 > .panel-heading {
+  color: #fff;
+  background-color: #50AFDA;
+  border-color: #50AFDA;
+}
+.panel-lgbk-3 > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #50AFDA;
+}
+.panel-lgbk-3 > .panel-heading .badge {
+  color: #50AFDA;
+  background-color: #fff;
+}
+.panel-lgbk-3 > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #50AFDA;
+}
+
+/*Styles for Panel Logbook #4*/
+.panel-lgbk-4 {
+  border-color: #31BCFA;
+}
+.panel-lgbk-4 > .panel-heading {
+  color: #fff;
+  background-color: #31BCFA;
+  border-color: #31BCFA;
+}
+.panel-lgbk-4 > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #31BCFA;
+}
+.panel-lgbk-4 > .panel-heading .badge {
+  color: #31BCFA;
+  background-color: #fff;
+}
+.panel-lgbk-4 > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #31BCFA;
+}
+
+/*Styles for Panel Logbook #5*/
+.panel-lgbk-5 {
+  border-color: #16536E;
+}
+.panel-lgbk-5  > .panel-heading {
+  color: #fff;
+  background-color: #16536E;
+  border-color: #16536E;
+}
+.panel-lgbk-5  > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #16536E;
+}
+.panel-lgbk-5  > .panel-heading .badge {
+  color: #16536E;
+  background-color: #fff;
+}
+.panel-lgbk-5  > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #16536E;
+}
